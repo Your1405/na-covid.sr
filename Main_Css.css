@@ -1,5 +1,8 @@
 
 body{font-family: 'Poppins', sans-serif;}
+
+
+/*----Navigation_Bar----*/
 header{
     position: fixed;
     padding: 40px 100px;
@@ -13,3 +16,42 @@ header.sticky{
     padding: 5px 100px;
     background: #fff;
 }
+
+ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    float: right;
+    transition: 1s;
+}
+
+ul li{
+    list-style: none;
+    align-items: center;
+}
+ul li a{position: relative;
+            display: block;
+                padding: 10px 20px;
+                    margin: 20px 0;
+                    text-decoration: none;
+                color: #fff;
+            font-weight: 500px;
+        transition: .3s;}
+
+ul li a:hover{color: #B6BABE;}
+
+.toggle{
+    display: none;
+        position: absolute;
+            right: 10px;
+                top: 26px;
+                    background: #525D69;
+                color: #fff;
+            padding: 5px;
+        cursor: pointer;
+    font-weight: bold;
+}
+
+header.sticky ul li a{color: #000;}
+/*----End_Of_Navigation_Bar----*/
