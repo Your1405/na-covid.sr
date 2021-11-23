@@ -55,3 +55,35 @@ ul li a:hover{color: #B6BABE;}
 
 header.sticky ul li a{color: #000;}
 /*----End_Of_Navigation_Bar----*/
+
+
+@media(max-width:820px){
+.toggle{display: block;}
+header{
+    padding: 0 0;
+    background: rgba(255,255,255,0.5);
+}
+header ul{
+    width: 100%;
+    top:0;
+    display: none;
+   
+}
+header ul.active{
+    display: block;
+}
+header ul li a{
+    margin:0;
+    display: block;
+    text-align: center;
+    color: #000;
+    background: #fff;
+    
+};
+
+    
+}
+header.sticky{
+    padding: 5px 30px;
+    background: #fff;
+}
