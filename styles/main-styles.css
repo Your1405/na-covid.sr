@@ -1,0 +1,138 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+}
+
+.header-container {
+    position: fixed;
+    padding: 40px 100px;
+    width: 100%;
+    height:90px;
+    box-sizing: border-box;
+    transition: 1s;
+    z-index: 2;
+}
+.header-container.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
+
+.nav-list-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    float: right;
+    transition: 1s;
+}
+
+.nav-list-container li {
+    list-style: none;
+    align-items: center;
+}
+
+.nav-list-container li a {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500px;
+    transition: .3s;
+}
+
+.nav-list-container li a:hover{color: #B6BABE;}
+
+.toggle {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 26px;
+    background: #525D69;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header-container.sticky .nav-list-container li a {color: #000;}
+
+.cta-container {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    top: 12rem;
+    background-image: linear-gradient(180deg, #fff, #0AED9D);
+    display: flex;
+}
+
+.cta-text {
+    margin: 5% 20% 2% 10%;
+}
+
+.cta-subtitle {
+    margin: 1% 20% 5% 0;
+}
+
+.btn:active {
+    color: #000;
+}
+
+.btn {
+    color: #000;
+    text-decoration: none;
+    background: #FFFDD0;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.cta-button {
+    padding: 0.5em 2em;
+}
+
+.cta-wave {
+    top: 11.8em;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+/* @media(max-width:820px) {
+    .toggle{display: block;}
+
+    header {
+        padding: 0 0;
+        background: rgba(255,255,255,0.5);
+    }
+
+    .header-container ul {
+        width: 100%;
+        top:0;
+        display: none;
+       
+    }
+
+    header ul.active {
+        display: block;
+    }
+
+    .header-container ul li a {
+        margin:0;
+        display: block;
+        text-align: center;
+        color: #000;
+        background: #fff;
+    };
+
+    .header-container.sticky {
+        padding: 5px 30px;
+        background: #fff;
+    }
+} */
