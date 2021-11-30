@@ -318,6 +318,38 @@ section.eiwit-inname{
     margin-bottom: 5em;
 }
 
+.carousel-container {
+    position: relative;
+    width: 65%;
+    margin: auto;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    top: 10em;
+}
+
+.carousel-slide {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    z-index: 4;
+    opacity: 0.6;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    z-index: 4;
+    opacity: 0.6;
+}
+
 /* School-terrein Page */
 
 .schoolterrein-slider{
@@ -393,5 +425,4 @@ section.stats{
         padding: 5px 30px;
         background: #fff;
     }
-
 } */
