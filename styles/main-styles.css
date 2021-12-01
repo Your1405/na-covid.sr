@@ -71,7 +71,7 @@ body {
 /** CTA **/
 .cta-container {
     width: 100%;
-    height: 30rem;
+    height:22rem;
     position: relative;
     top: 12rem;
     background-image: linear-gradient(180deg, #fff, #0AED9D);
@@ -79,9 +79,13 @@ body {
 }
 
 .cta-text {
-    margin: 5% 20% 2% 10%;
+    margin: 5% 10% 2% 6%;
 }
-
+.cta-schoolerf{
+    margin: 2% 1% 2% 0%;
+    height: 376px;
+    width: 520px;
+}
 .cta-subtitle {
     margin: 1% 20% 5% 0;
 }
@@ -165,20 +169,23 @@ body {
 section.wat-is-covid{
     width: 100%;
     max-width: 100%;
-    height: 100%;
+    height: 80vh;
     max-height: 100%;
-    margin-top: 11rem;
-    text-align: right;
+    margin-top: 15rem;
     position: relative;
     display: flex;
 }
 .wat-is-covid-content{
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 4%;
+    text-align: start;
+    margin-left: 8%;
+    margin-right: 2%;
+    max-width: 30%;
+    margin-top: 6em;
 }
 .wat-is-covid-img{
     margin-left: 5%;
+    width: 800px;
+    height: 480px;
 }
 section.verschijnselen-section{
     width: 100%;
