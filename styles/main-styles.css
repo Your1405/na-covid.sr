@@ -49,7 +49,7 @@ body {
     transition: .3s;
 }
 
-.nav-list-container li a:hover{color: #B6BABE;}
+.nav-list-container li a:hover{color: #0AED9D;}
 
 .toggle {
     display: none;
@@ -64,6 +64,8 @@ body {
 }
 
 .header-container.sticky .nav-list-container li a {color: #000;}
+
+.header-container.sticky .nav-list-container li a:hover { color: #0AED9D; }
 
 /** end of header **/
 
@@ -95,12 +97,22 @@ body {
 }
 
 .btn {
+    display: block;
     color: #000;
     text-decoration: none;
     background: #FFFDD0;
     mix-blend-mode: normal;
+    width: 30%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
+    transition: transform 0.4s ease-in-out, background-color 0.2s ease-in-out;
+    text-align: center;
+}
+
+.btn:hover {
+    transition: transform 0.4s ease-in-out, background-color 0.2s ease-in-out;
+    transform: translateY(-5px);
+    background-color: #FFF985;
 }
 
 .cta-button {
@@ -135,13 +147,27 @@ body {
 
 .maatregel {
     position: relative;
+    height: 300px;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.maatregel:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 9px 23px 6px rgba(0,0,0,0.45);
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.maatregel-img:hover {
+    transition: filter 0.2s ease-in-out;
+    filter: none;
 }
 
 .maatregel-header, .maatregel-subtitle {
     position: absolute;
     z-index: 4;
     left: 1em;
-    color:rgba(255, 255, 255, 1);
+    /* color:rgba(255, 255, 255, 1); */
+    color: #080808;
 }
 
 .maatregel-header {
@@ -163,10 +189,10 @@ body {
 .maatregel-img {
     filter: blur(2px);
     opacity: 0.8;
+    transition: filter 0.2s ease-in-out;
 }
 
-
-section.wat-is-covid{
+section.wat-is-covid {
     width: 100%;
     max-width: 100%;
     height: 80vh;
@@ -175,58 +201,83 @@ section.wat-is-covid{
     position: relative;
     display: flex;
 }
-.wat-is-covid-content{
+
+.wat-is-covid-content {
     text-align: start;
     margin-left: 8%;
     margin-right: 2%;
     max-width: 30%;
     margin-top: 6em;
 }
-.wat-is-covid-img{
+
+.wat-is-covid-img {
     margin-left: 5%;
     width: 800px;
     height: 480px;
 }
-section.verschijnselen-section{
+
+section.verschijnselen-section {
+    display: flex;
     width: 100%;
     max-width: 100%;
-    height: 110vh;
-    /* height: 100%;
-    max-height: 100%; */
+    height: 130vh;
     margin-top: 4em;
     background-color: #EF063C;
-    display: inline-block;
     text-align: center;
+    display: inline-block;
+    justify-content: center;
     color: #fff;
-    
 }
-.verschijnselen-content{
-    margin: 7% 25% 7% 25%;
+
+.verschijnselen-content {
+    margin: 7% 25% 0 25%;
     max-width: 100%;
 }
-.verschijnselen-img{
-    float: center;
-    margin-right: 5%;
+
+.verschijnselen-section::before {
+    content: url(/resources/images/covid-particles.png);
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    margin-left: -50%;
+    z-index: 2;
 }
-.maatregelen-content{
+
+.verschijnselen-img {
+    background-color: white;
+    color: black;
+    width: 50%;
+    margin-top: 2em;
+    padding-top: 2em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 20%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.maatregelen-content {
     text-align: center;
-    margin-top: 5%;
     margin-bottom: 5%;
 }
-.maatregel{
+
+.maatregel {
     margin-bottom: 4%;
 }
-.statistics{
+
+.statistics {
     margin-top: 3em;
     background-image: linear-gradient(180deg, #fff, #0AED9D);
     height: 100vh;
 }
-.stats-container{
+
+.stats-container {
     position:relative;
     text-align: center;
     top: 20em;
 }
-.footer{
+
+.footer {
     width: 100%;
     max-width: 100%;
     color: #000;
@@ -235,26 +286,26 @@ section.verschijnselen-section{
     height:15vh
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     margin: 1.5em;
 }
 
-.footer-paragraphs{
+.footer-paragraphs {
     float: right;
     text-align: right;
     display: flex;
     margin-left: 70%;
     height: fit-content;
 }
-
-.bronnen,.over-ons,.contact-ons{
+ 
+.bronnen,.over-ons,.contact-ons {
     margin-left: 2em;
     text-decoration: none;
     color: black;
 }
 
-.gevolgen-container{
+.gevolgen-container {
     width: 100%;
     height: 34rem;
     position: relative;
@@ -263,15 +314,15 @@ section.verschijnselen-section{
     background-image: linear-gradient(180deg, #fff, #0AED9D);
 }
 
-.gevolgen-text{
+.gevolgen-text {
     text-align: center;
 }
 
-.gevolgen-main-title{
+.gevolgen-main-title {
     font-size: 2em;
 }
 
-.gevolgen-main-title,.gevolgen-main-subtitle{
+.gevolgen-main-title,.gevolgen-main-subtitle {
     margin-top: 4em;
 }
 
@@ -281,6 +332,7 @@ section.verschijnselen-section{
     max-width: 100%;
     position: relative;
 }
+
 /* Section 1 lichamelijk */
 section.lichamelijke{
     display: flex;
