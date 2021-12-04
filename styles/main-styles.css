@@ -175,6 +175,7 @@ body {
     bottom: 40%;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 1em
 }
 
 .maatregel-subtitle {
@@ -343,6 +344,7 @@ section.lichamelijke{
 
 .lichamelijke-text,.cognitieve-text,.emotionele-text{
     margin: 3em;
+    text-align: left;
 }
 .cognitieve-foto,.emotionele-foto,.lichamelijke-foto{
     margin: 5em;
@@ -364,16 +366,25 @@ section.emotionele{
 }
 .emotionele-text-header,.lichamelijke-text-header{
     margin-bottom: 1em;
+    text-align: center
+    
 }
-
-section.eiwit-inname{
+.lichamelijke-ol,.cognitieve-ol,.emotionele-ol,.nazorg-ol,.procedures-ol{
+    margin-left: 1.2em;
+    margin-top: 1em;
+    text-align: left;
+}
+section.nazorg{
     display: block;
     text-align: center;
     margin: 2em 10% 8em 10% ;
     max-width: 100%;
     
 }
-.eiwit-inname-text{
+.nazorg-ol{
+    text-align: left;
+}
+.nazorg-text{
     margin-bottom: 5em;
 }
 
@@ -425,12 +436,15 @@ section.procedures{
 }
 .procedures-content{
 display: flex;
-margin: 5em;
+margin: 3em 5em 5em 5em;
 }
 .procedures-text{
     margin-right: 5em;
 }
-
+.procedures-img{
+    width: 100%;
+    height: auto;
+}
 
 section.do-en-dont{
     margin-top: 8em;
