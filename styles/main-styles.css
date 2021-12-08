@@ -152,6 +152,7 @@ body {
 
 .maatregel {
     position: relative;
+    width: 1200px;
     height: 300px;
     transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
@@ -175,6 +176,10 @@ body {
     color: #080808;
 }
 
+.maatregel-title:any-link {
+    text-decoration: none;
+}
+
 .maatregel-header {
     font-size: 2em;
     bottom: 40%;
@@ -196,6 +201,11 @@ body {
     filter: blur(2px);
     opacity: 0.8;
     transition: filter 0.2s ease-in-out;
+}
+
+.lees-meer-btn {
+    padding: 1em 3em;
+    margin-top: 1em;
 }
 
 section.wat-is-covid {
@@ -423,6 +433,7 @@ height: 90vh;
     left: 5%;
     z-index: 4;
     opacity: 0.6;
+    cursor: pointer;
 }
 
 #nextBtn {
@@ -431,6 +442,7 @@ height: 90vh;
     right: 5%;
     z-index: 4;
     opacity: 0.6;
+    cursor: pointer;
 }
 
 /* School-terrein Page */

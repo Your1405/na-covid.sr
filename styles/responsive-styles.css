@@ -1,9 +1,10 @@
 @media(max-width:820px) {
 
     .toggle{display: block}
+    
     .header-container{
         padding: 0 0;
-        background: rgba(255,255,255,0.5);
+        background: #ffffff80;
     }
     .header-container ul{
         width: 100%;
@@ -31,5 +32,50 @@
         top: 12rem;
         background-image: linear-gradient(180deg, #fff, #0AED9D);
         display: block;
+    }
+
+    .title-container {
+        height: 10rem;
+    }
+
+    .maatregelen-container {
+        margin-top: 15em;
+    }
+
+    .maatregel-img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .maatregel-header, .maatregel-subtitle {
+        position: relative;
+        z-index: 4;
+        /* color:rgba(255, 255, 255, 1); */
+        color: #080808;
+        text-decoration: none;
+    }
+
+    .maatregel-title:any-link {
+        text-decoration: none;
+    }
+
+    .maatregel-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 0.75rem;
+        width: 400px;
+        height: 300px;
+    }
+
+    .maatregel {
+        width: 400px;
+        height: 300px;
+    }
+
+    .stat-1 img, .stat-2 img{
+        width: 400px;
+        height: 300px;
     }
 }
