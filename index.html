@@ -6,10 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="styles/main-styles.css">
+        <link rel="stylesheet" href="styles/responsive-styles.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="/resources/images/logo.png" type="image/x-icon">
         
         <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script> 
         <script defer src="scripts/menu.js"></script>
@@ -57,7 +60,7 @@
             <section class="verschijnselen-section">
                 <div class="verschijnselen-content">
                     <h1>HEEFT U DE VOLGENDE ZIEKTE-VERSCHIJNSELEN?</h1>
-                    <p class= "verschijnselen-subheader">Meest voorkomende symptomen:</p>
+                    <p class= "verschijnselen-subheader"><u>Meest voorkomende symptomen:</u></p>
                     <ol style="list-style-type: none;"> 
                         <li>Koorts</li>
                         <li>Hoesten</li>
@@ -65,7 +68,7 @@
                         <li>Verlies van smaak of geur</li>
                     </ol>
                     <br>
-                    <p>Minder vaak voorkomende symptomen:</p>
+                    <p><u>Minder vaak voorkomende symptomen:</u></p>
                     <ol style="list-style-type: none;">
                         <li>Keelpijn</li>
                         <li>Hoofdpijn</li>
@@ -74,7 +77,7 @@
                         <li>Rode of geïrriteerde ogen</li>
                     </ol>
                     <br>
-                    <p>Ernstige symptomen:</p>
+                    <p><u>Ernstige symptomen:</u></p>
                     <ol style="list-style-type: none;">
                         <li>Moeite met ademhalen of kortademigheid</li>
                         <li>Verlies van spraak of mobiliteit, of verwarring</li>
@@ -92,21 +95,27 @@
                     <p class="Maatregelen-uitleg">Maatregelen die u kunt treffen om veilig te blijven tijdens de pandemie</p>
                 </div>
                 <article class="maatregel">
-                    <a class="maatregel-btn" href="#"><img class="maatregel-img" src="/resources/images/mondkap.png"></a>
-                    <h2 class="maatregel-header">Mondkap op </h2>
-                    <p class="maatregel-subtitle">Het gebruik van mondkap is verplicht op het Natin complex en je mag het niet zomaar weg halen als je in een likaal of op het Natin terijn bent.</p>
+                    <a class="maatregel-btn" target="_blank" href="https://www.info-coronavirus.be/nl/mondmasker/">
+                        <img class="maatregel-img" src="/resources/images/mondkap.png">
+                        <h2 class="maatregel-header">Mond- en neuskap op </h2>
+                        <p class="maatregel-subtitle">Het gebruik van een mond- en neuskap is verplicht op het Natin complex. Je mag het niet zomaar weg halen als je in een lokaal of op het Natin terrein bent.</p>
+                    </a>
                 </article>
                     <article class="maatregel">
-                    <a class="maatregel-btn" href="#"><img class="maatregel-img" src="/resources/images/afstand.png"></a>
-                    <h2 class="maatregel-header">Afstand houden</h2>
-                    <p class="maatregel-subtitle">Een ieder moet met een afstand van 1.5 tot 2 meter staan op het Natin, niet alleen op het erf maar ook binnen de Lokalen.</p>
+                    <a class="maatregel-btn" target="_blank" href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/coronavirus-social-distancing-and-self-quarantine">
+                        <img class="maatregel-img" src="/resources/images/afstand.png">
+                        <h2 class="maatregel-header">Afstand houden</h2>
+                        <p class="maatregel-subtitle">Een ieder moet met een afstand van 1.5 tot 2 meter staan op het Natin, niet alleen op het erf maar ook binnen de lokalen.</p>
+                    </a>
                 </article>
                 <article class="maatregel">
-                    <a class="maatregel-btn" target="_blank" href="https://covid19.nj.gov/faqs/coronavirus-information/slowing-the-spread/is-hand-sanitizer-effective-against-the-virus"><img class="maatregel-img" src="/resources/images/handen-sanitizen.png"></a>
-                    <h2 class="maatregel-header">Handen Sanitizen</h2>
-                    <p class="maatregel-subtitle">Handen sanititaizen is ook verplicht op Natin. Elk keer dat je een lokaal binnen stapt ben je verplicht je handen te sanitizen.</p>
+                    <a class="maatregel-btn" target="_blank" href="https://covid19.nj.gov/faqs/coronavirus-information/slowing-the-spread/is-hand-sanitizer-effective-against-the-virus">
+                        <img class="maatregel-img" src="/resources/images/handen-sanitizen.png">
+                        <h2 class="maatregel-header">Handen Sanitizen</h2>
+                        <p class="maatregel-subtitle">Handen sanitizen is ook verplicht op het Natin. Elk keer dat je een lokaal binnen stapt ben je verplicht je handen te sanitizen.</p>
+                    </a>
                 </article>
-                    <a class="btn cta-button" href="/page/maatregelen.html">Lees meer</a>
+                    <a class="btn lees-meer-btn" href="/page/maatregelen.html">Lees meer</a>
             </section>
 
             <h1 class="resultaten-header">Natin enquette resultaten:</h1>
@@ -119,6 +128,7 @@
                  <div class="stat-2">
                      <img src="/resources/images/maatregelen-op-school.png">
                 </div>
+                <a class="btn lees-meer-btn" href="/page/schoolterrein.html#enquete">Lees meer</a>
             </section>
             <section class="footer">
                 <div class="footer-content">
